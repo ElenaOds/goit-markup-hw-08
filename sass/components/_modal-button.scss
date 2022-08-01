@@ -1,0 +1,19 @@
+/*.policy__button {
+    display: flex;
+    justify-content: center;
+}
+
+.policy__submit {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 55px;
+    min-width: 200px;
+    @extend %button;
+
+    transition: box-shadow $transition;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}    */

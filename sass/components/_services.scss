@@ -1,0 +1,45 @@
+.section__service {
+    padding-top: 0;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.section__title--desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-list__item {
+    display: block;
+    position: relative;
+    margin-right: 30px;
+    width: 370px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.service-list__label {
+    @include centeredFlex ();
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.service-list__text {
+    margin: 0 0;
+    color: $primaryBackgroundColor;
+    @extend %subtitle;
+} 

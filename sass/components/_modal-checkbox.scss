@@ -1,0 +1,59 @@
+/*.policy {
+    @include centeredFlex ();
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.policy__input {
+    appearance: none;
+
+    &:checked {
+        opacity: 1;
+
+        +.policy__icon {
+            opacity: 1;
+        }
+    }
+}
+
+.policy__checkbox {
+    @include centeredFlex ();
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid $titleTextColor;
+    border-radius: 2px;
+}
+
+.policy__icon {
+    position: absolute;
+    opacity: 0;
+    width: 16px;
+    height: 15px;
+    fill: $primaryBackgroundColor;
+    border: 2px solid $accentColor;
+    border-radius: 2px;
+    background-color: $accentColor;
+
+    transition: opacity $transition;
+}
+
+.policy__label {
+    display: flex; 
+    flex-direction: row-reverse;
+    @extend %main-text;
+    color: $primaryTextColor;
+}
+
+.policy__link {
+    @extend %main-text;
+    color: $accentColor;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+*/
