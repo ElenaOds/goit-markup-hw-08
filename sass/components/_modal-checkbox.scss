@@ -1,4 +1,4 @@
-/*.policy {
+.policy {
     @include centeredFlex ();
     justify-content: center;
     margin-top: 20px;
@@ -24,7 +24,7 @@
     flex-shrink: 0;
     width: 16px;
     height: 15px;
-    margin-right: 7px;
+    margin-right: 8px;
     border: 2px solid $titleTextColor;
     border-radius: 2px;
 }
@@ -54,6 +54,8 @@
     color: $accentColor;
     text-decoration-line: underline;
     cursor: pointer;
-}
 
-*/
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+}

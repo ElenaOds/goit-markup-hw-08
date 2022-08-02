@@ -4,6 +4,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -19,6 +23,7 @@ img {
 section {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .section__title {
@@ -66,6 +71,7 @@ section {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -116,13 +122,6 @@ section {
   }
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 60px;
-}
-
 .menu-button {
   display: block;
   right: 0;
@@ -167,6 +166,13 @@ section {
 }
 .menu-container.is-open {
   display: block;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -234,6 +240,7 @@ section {
 @media screen and (max-width: 1199px) {
   .contact {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
