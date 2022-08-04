@@ -1,9 +1,9 @@
-/*.footer__contact {
+.footer__contact {
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
-    @extend %main-text;
+    @extend %footer-text;
     text-decoration: none;
 
     transition: color $transition;
@@ -12,5 +12,8 @@
     &:focus {
         color: $accentColor;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
-*/

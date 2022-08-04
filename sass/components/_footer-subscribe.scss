@@ -1,20 +1,27 @@
-/*.from-subscribe {
-    width: 570px;
-    margin-left: 0;
-    margin-right: 0;
+.from-subscribe {
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .form-subscribe__field {
     display: flex;
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
     flex-direction: space-between;
+    }
 }
 
 .form-subscribe__input {
-    margin-left: 0;
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding: 15px 16px;
     height: 50px;
-    width: 358px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -22,13 +29,23 @@
     font-size: 16px;
     color: $primaryBackgroundColor;
 
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
     &::placeholder {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-    }
+    }  
 }
 
 .form-subscribe__button {
@@ -54,4 +71,4 @@
 .form-subscribe__icon {
     fill: currentColor;
     margin-left: 10px;
-} */
+} 

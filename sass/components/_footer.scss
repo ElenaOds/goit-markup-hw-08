@@ -1,4 +1,4 @@
-/*footer {
+.footer {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
@@ -6,13 +6,54 @@
     padding-bottom: 60px;
     background-color: #2F303A;
     color: $primaryBackgroundColor;
+    
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.footer .container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+address {
+    @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    }
+}
+
+.footer__wrap {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;  
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-right: 93px;
+        width: 100%;
+    }
 }
 
 .footer__text {
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     font-style: normal;
-    @extend %main-text;
+    @extend %footer-text;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer__title {
@@ -21,4 +62,4 @@
     margin-bottom: 20px;
     color: $primaryBackgroundColor;
     @extend %subtitle;
-}*/
+}
