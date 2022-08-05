@@ -23,7 +23,7 @@ img {
 section {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .section__title {
@@ -265,11 +265,6 @@ section {
 @media screen and (min-width: 768px) {
   .site-nav {
     display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .site-nav {
     display: flex;
     align-items: center;
     margin-left: 93px;
@@ -277,6 +272,7 @@ section {
     flex-wrap: wrap;
   }
 }
+
 .site-nav__item {
   position: relative;
   margin-right: 50px;
@@ -507,7 +503,12 @@ section {
   padding: 20px 24px;
   text-align: left;
   border: 1px solid #EEEEEE;
-  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .card--padding {
+    padding-bottom: 56px;
+  }
 }
 
 .content__title {
@@ -526,6 +527,10 @@ section {
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
+}
+
+.content-photo {
+  width: 100%;
 }
 
 .social-icons {

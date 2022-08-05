@@ -17,6 +17,7 @@
 }
 
 .team-list__item {
+    width: 100%;
     background-color: $primaryBackgroundColor;
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -71,6 +72,6 @@
     text-align: center;
 }
 
-
-
-
+.team__photo {
+    width: 100%;
+}

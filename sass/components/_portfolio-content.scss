@@ -83,8 +83,12 @@
     padding: 20px 24px;
     text-align: left;
     border: 1px solid #EEEEEE;
-    flex-grow: 1;
-
+}
+.card--padding {
+    @media screen and (min-width: 768px) {
+        padding-bottom: 56px;
+    }
+    
 }
 
 .content__title {
@@ -103,4 +107,8 @@
     color: $primaryTextColor;
     font-size: 16px;
     line-height: 1.88;
+}
+
+.content-photo {
+    width: 100%;
 }
