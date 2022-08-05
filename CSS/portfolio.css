@@ -112,7 +112,7 @@ section {
   .container--flex {
     display: flex;
     align-items: center;
-    min-height: 80px;
+    height: 80px;
   }
 }
 
@@ -149,6 +149,11 @@ section {
   cursor: pointer;
   outline: none;
 }
+@media screen and (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -167,6 +172,7 @@ section {
   height: 100vh;
   background-color: white;
   padding: 48px 40px;
+  z-index: 100;
   overflow-y: scroll;
 }
 .menu-container.is-open {
@@ -257,7 +263,7 @@ section {
   min-height: 60px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .site-nav {
     display: none;
   }
@@ -310,7 +316,7 @@ section {
   display: flex;
   margin-left: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .contact {
     display: none;
   }
@@ -431,6 +437,7 @@ section {
 }
 
 .content__list {
+  width: 100%;
   background-color: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
@@ -455,6 +462,7 @@ section {
 .content__link {
   text-decoration: none;
   display: block;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .content__link:hover, .content__link:focus {
@@ -505,12 +513,11 @@ section {
   border: 1px solid #EEEEEE;
 }
 
-@media screen and (min-width: 768px) {
-  .card--padding {
-    padding-bottom: 56px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .content__card--padding {
+    padding: 20px 24px 56px 24px;
   }
 }
-
 .content__title {
   margin-top: 0;
   margin-bottom: 4px;
