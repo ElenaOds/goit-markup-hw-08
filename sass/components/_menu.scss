@@ -24,6 +24,9 @@
 .menu-container {
     display: none;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100vw;
@@ -50,9 +53,7 @@
 }
 
 .nav-menu {
-   margin-bottom: 302px;
-
-    &__item:not(:last-child) {
+       &__item:not(:last-child) {
         margin-bottom: 32px;
     }
 
@@ -74,6 +75,7 @@
 }
 
 .contacts-menu {
+    margin-top: auto;
     margin-bottom: 64px;
     
     &__item:not(:last-child) {

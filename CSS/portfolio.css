@@ -166,6 +166,9 @@ section {
 .menu-container {
   display: none;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
@@ -189,9 +192,6 @@ section {
   }
 }
 
-.nav-menu {
-  margin-bottom: 302px;
-}
 .nav-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -210,6 +210,7 @@ section {
 }
 
 .contacts-menu {
+  margin-top: auto;
   margin-bottom: 64px;
 }
 .contacts-menu__item:not(:last-child) {
